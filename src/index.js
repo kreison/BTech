@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import App from './App';
 import { rootReducer } from './redux/store';
 
-
+//bruh
 const store = createStore(rootReducer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

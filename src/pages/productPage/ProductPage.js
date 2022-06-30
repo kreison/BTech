@@ -19,14 +19,36 @@ function ProductPage() {
                                 <div>
                                     <h1> {elem.price} </h1>
                                     <h5> {elem.specifications} </h5>
-                                    <p> {elem.procces.proName} ____________ {elem.procces.proDesc} </p>
-                                    <p> {elem.mCamera.mainCam} ____________ {elem.mCamera.descCam} </p>
-                                    <p> {elem.fCamera.frontCam} ____________ {elem.fCamera.descCam} </p>
-                                    <p> {elem.hdd.inMemory} ____________ {elem.hdd.descMemory} </p>
-                                    <p> {elem.ram.ramName} ____________ {elem.ram.descRam} </p>
-                                    <p> {elem.nfc.nfcName} ____________ {elem.nfc.descNfc} </p>
+                                    <table className={classes.block_table}>
+                                        <tbody>
+                                            <tr>
+                                                <th> {elem.procces.proName} </th>
+                                                <td> {elem.procces.proDesc} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> {elem.mCamera.mainCam} </th>
+                                                <td> {elem.mCamera.descCam} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> {elem.fCamera.frontCam} </th>
+                                                <td>  {elem.fCamera.descCam} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> {elem.hdd.inMemory} </th>
+                                                <td> {elem.hdd.descMemory} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> {elem.ram.ramName} </th>
+                                                <td> {elem.ram.descRam} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> {elem.nfc.nfcName} </th>
+                                                <td> {elem.nfc.descNfc} </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-                                <button>Добавить в корзину</button>
+                                    <button>Добавить в корзину</button>
                                 </div>
                             </div>
                             <div className={classes.desc}>

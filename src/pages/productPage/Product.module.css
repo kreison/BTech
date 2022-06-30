@@ -1,0 +1,35 @@
+.product {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.block_img_price {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1300px;
+}
+.image {
+    padding-top: 30px;
+}
+button {
+    margin-top: 120px;
+    width: 235px;
+    height: 48px;
+    padding: 12px 24px;
+    background-color: #F9FC62;
+    border-radius: 12px;
+    border: none;
+    font-weight: 800;
+}
+
+.desc{
+    width: 800px;
+}

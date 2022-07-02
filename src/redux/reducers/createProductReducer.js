@@ -2,7 +2,8 @@ import { dataProduct } from "../../components/productData/ProductData";
 import { types } from "../types";
 
 const initialState = {
-    products: dataProduct
+    products: dataProduct,
+    text: ''
 }
 
 export const createProductReducer = (state = initialState, action) => {

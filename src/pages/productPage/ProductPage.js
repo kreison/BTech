@@ -5,6 +5,7 @@ import classes from './Product.module.css'
 function ProductPage() {
     const products = useSelector(state => state.products.products)
 
+    // testing
 
     return (
         <div className={classes.product}>
@@ -31,7 +32,7 @@ function ProductPage() {
                                             </tr>
                                             <tr>
                                                 <th> {elem.fCamera.frontCam} </th>
-                                                <td>  {elem.fCamera.descCam} </td>
+                                                <td> {elem.fCamera.descCam} </td>
                                             </tr>
                                             <tr>
                                                 <th> {elem.hdd.inMemory} </th>

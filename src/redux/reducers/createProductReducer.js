@@ -3,7 +3,6 @@ import { types } from "../types";
 
 const initialState = {
     products: dataProduct,
-    text: ''
 }
 
 export const createProductReducer = (state = initialState, action) => {

@@ -8,7 +8,7 @@ const MainPages = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='product/:id' element={<ProductPage/>}/>
+                    <Route path='product' element={<ProductPage />} />
                 </Routes>
             </BrowserRouter>
         </>

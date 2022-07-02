@@ -1,6 +1,6 @@
 .product {
     display: flex;
-    width: 90%;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .block_table {
-    width: 550px;
+    width: 580px;
 }
 th, td {
     border-bottom: 1px solid gray;
@@ -45,6 +45,13 @@ button {
     font-weight: 800;
 }
 
-.desc{
-    width: 800px;
+.desc_product{
+width: 804px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #0B1124;
 }
+

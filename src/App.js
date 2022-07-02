@@ -1,13 +1,14 @@
-import MainPage from './pages/MainPage';
-import ProductPage from './pages/productPage/ProductPage' 
+import MainPages from './pages/MainPages';
+import ProductPage from './pages/productPage/ProductPage'
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
-      <ProductPage/>
-      
-      
+      <MainPages>
+        <ProductPage />
+      </MainPages>
+
+
     </div>
   );
 }

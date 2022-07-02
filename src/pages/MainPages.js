@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes } from 'react-router-dom'
 
-const MainPage = () => {
+const MainPages = () => {
 
     return (
         <>
@@ -14,4 +14,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default MainPages;

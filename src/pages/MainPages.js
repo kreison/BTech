@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ProductPage from './productPage/ProductPage';
 
 const MainPages = () => {
 
@@ -7,7 +8,7 @@ const MainPages = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    
+                    <Route path='product/:id' element={<ProductPage/>}/>
                 </Routes>
             </BrowserRouter>
         </>

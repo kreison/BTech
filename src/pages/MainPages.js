@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import MainPage from "./mainPage/MainPage";
 
 const MainPages = () => {
 
@@ -7,7 +8,7 @@ const MainPages = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    
+                    <Route index element={<MainPage/>}/>
                 </Routes>
             </BrowserRouter>
         </>

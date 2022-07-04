@@ -10,8 +10,8 @@ const MainPages = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    {/* <Route index element={<MainPage/>}/>
-                    <Route path='product/:id' element={<ProductPage/>}/> */}
+                    {/* <Route index element={<MainPage/>}/> */}
+                    <Route path='product/:id' element={<ProductPage/>}/>
                     <Route index element={<HityPage/>}/>
                 </Routes>
             </BrowserRouter>

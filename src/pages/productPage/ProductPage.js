@@ -5,7 +5,6 @@ import classes from './Product.module.css'
 function ProductPage() {
     const products = useSelector(state => state.products.products)
 
-
     return (
         <div className={classes.product}>
             {
@@ -47,7 +46,6 @@ function ProductPage() {
                                             </tr>
                                         </tbody>
                                     </table>
-
                                     <button>Добавить в корзину</button>
                                 </div>
                             </div>

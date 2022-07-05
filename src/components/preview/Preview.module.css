@@ -1,0 +1,50 @@
+.preview {
+    width: 185px;
+    /* min-height: 270px; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img {
+    width: 159.84px;
+    height: 154px;
+}
+.name{
+    width: 195px;
+}
+.desc {
+    font-size: 16px;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+.addFavourite{
+    width: 18px;
+    height: 15px;
+    background: url('../../picture/preview/addFavourite.svg') center no-repeat; 
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.active{
+    background: url('../../picture/preview/oktest.png') center no-repeat;
+    background-size: contain;
+}

@@ -1,8 +1,8 @@
-import { dataProduct } from "../../components/productData/ProductData";
+import { dataProduct } from "../../data/productData/ProductData";
 import { types } from "../types";
 
 const initialState = {
-    products: dataProduct
+    products: dataProduct,
 }
 
 export const createProductReducer = (state = initialState, action) => {

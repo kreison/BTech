@@ -1,0 +1,10 @@
+.block_review {
+    width: 804px;
+}
+.block_review p {
+    color: #605D74;
+}
+.in_block_review {
+    display: flex;
+    justify-content: space-between;
+}

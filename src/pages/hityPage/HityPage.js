@@ -18,7 +18,7 @@ function HityPage(props) {
     }, [data])
 
     return (
-        <div>
+        <div className='container'>
             <h1>Хиты продаж</h1>
             <div className={ classes.container }>
                 <div className={ classes.hitsInner }>

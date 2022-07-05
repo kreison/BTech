@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Hity.module.css'
-import { Link } from 'react-router-dom'
 // import Hity from '../../components/popular/hity';
 import Preview from '../../components/preview/Preview';
 

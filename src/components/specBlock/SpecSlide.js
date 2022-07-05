@@ -13,10 +13,31 @@ export default () => {
         <Swiper
             scroll
             spaceBetween={100}
-            slidesPerView={3.5}
+            breakpoints={ {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                800: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                1174: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 40
+                },
+                1000: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 40
+                }
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             loop
+            
         >
             <SwiperSlide>
                 <img key={slide1} src={slide1} alt="iu"/>

@@ -9,3 +9,8 @@
     width: 1195px;
     margin: 0 auto;
 }
+@media (max-width: 1195px) {
+    .container{
+        width: 100%;
+    }
+}

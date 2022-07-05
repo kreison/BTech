@@ -10,11 +10,11 @@ import Partnery from "../../components/partnery/Partnery";
 
 const MainPage = () => {
     return (
-        <div>
+        <div >
             <Skidki/>
             <Popular/>
-            <Slide/>
-            <Hity/>
+            {/* <Slide/> */}
+            {/* <Hity/> */}
             <SpecBlock/>
             <PreimBlock/>
             <Partnery/>
@@ -23,3 +23,4 @@ const MainPage = () => {
     );
 };
 
+export default MainPage;

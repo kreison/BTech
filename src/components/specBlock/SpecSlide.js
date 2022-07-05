@@ -18,12 +18,12 @@ export default () => {
                 breakpoints={ {
                     // when window width is >= 320px
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 2.1,
                         spaceBetween: 20
                     },
                     // when window width is >= 480px
                     800: {
-                        slidesPerView: 1.1,
+                        slidesPerView: 2.1,
                         spaceBetween: 30
                     },
                     // when window width is >= 640px
@@ -44,13 +44,13 @@ export default () => {
                 loop
 
             >
-                <SwiperSlide>
+                <SwiperSlide className={cl.slide}>
                     <img key={ slide1 } src={ slide1 } alt="iu" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className={cl.slide}>
                     <img key={ slide2 } src={ slide2 } alt="iu" />
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className={cl.slide}>
                     <img key={ slide3 } src={ slide3 } alt="iu" />
                 </SwiperSlide>
             </Swiper>

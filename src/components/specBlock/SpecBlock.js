@@ -5,12 +5,12 @@ import cl from './SpecBlock.module.css'
 const SpecBlock = () => {
     return (
         <div className={cl.spec}>
-            <div className={cl.container}>
-                <h2 style={{marginLeft: 80}}>Специальные предложения</h2>
-                <SpecSlide/>
+            <div className='container'>
+                <h2>Специальные предложения</h2>
+                
 
             </div>
-
+            <SpecSlide/>
         </div>
     );
 };

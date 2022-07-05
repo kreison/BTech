@@ -5,6 +5,7 @@ import Slide from "../../components/popular/Slide";
 import Hity from "../../components/popular/hity";
 import SpecBlock from "../../components/specBlock/SpecBlock";
 import PreimBlock from "../../components/preimushestva/PreimBlock";
+import Partnery from "../../components/partnery/Partnery";
 
 
 const MainPage = () => {
@@ -16,6 +17,7 @@ const MainPage = () => {
             <Hity/>
             <SpecBlock/>
             <PreimBlock/>
+            <Partnery/>
 
         </div>
     );

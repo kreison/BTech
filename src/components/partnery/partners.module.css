@@ -1,3 +1,32 @@
-.partnerBlock{
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+.partnerBlock_inner {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.partnerBlock h2{
+    padding-top: 50px;
+}
+.img{
+    width: 80px;
+    object-fit: contain;
+    /* height: 70px; */
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    padding-bottom: 60px;
 
+}
+.two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
 }

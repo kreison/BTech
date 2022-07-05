@@ -6,7 +6,7 @@ const SpecBlock = () => {
     return (
         <div className={cl.spec}>
             <div className={cl.container}>
-                <h2>Специальные предложения</h2>
+                <h2 style={{marginLeft: 80}}>Специальные предложения</h2>
                 <SpecSlide/>
 
             </div>

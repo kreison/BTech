@@ -35,8 +35,19 @@
     width: 580px;
 }
 .block {
-    height:20g0px;
+    height:200px;
     line-height: 35px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.svg {
+    padding-bottom: 15px;
 }
 
 .between {

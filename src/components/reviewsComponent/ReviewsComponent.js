@@ -7,7 +7,7 @@ function ReviewsComponent() {
     return (
         <div className={classses.block_review}>
             <br />
-            <h3>Отзывы</h3>
+            <h2>Отзывы</h2>
             <div className={classses.in_block_review}>
                 <h4>Хорошее качество по выгодной цене!</h4>
                 <img src="./img/Baktybekova.svg" alt="" />
@@ -43,8 +43,6 @@ function ReviewsComponent() {
                 классными смартфонами по соотношению качества и цены.
                 Данная моя покупка это наблюдение подтверждает без всяких сомнений.
             </p>
-
-
         </div>
     )
 }

@@ -1,11 +1,10 @@
-
-
 export const dataProduct = [
     {
         id: 1,
         name: 'Смартфон Samsung Galaxy A52 5G EU',
         stars: <img src="./img/stars.svg" alt="" />,
         image: <img src="./img/phone.png" alt="" />,
+        image2: <img src="./img/fick.png" alt="" />,
         price: '45 000 сом',
         specifications: 'Характеристики',
         procces: {

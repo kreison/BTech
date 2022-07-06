@@ -1,7 +1,18 @@
+
+* {
+    box-sizing: border-box;
+}
+
 .product {
     display: flex;
     width: 1140px;
     margin: 0 auto;
+}
+
+@media (max-width: 1180px) {
+    .product {
+        padding: 40px 0;
+    }
 }
 
 .reviews{
@@ -14,7 +25,7 @@
 .block_img_price {
     display: flex;
     justify-content: space-evenly;
-    width: 1300px;
+    width: 1140px;
 }
 .image {
     padding-top: 30px;
@@ -46,12 +57,29 @@ button {
 }
 
 .desc_product{
-width: 804px;
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-color: #0B1124;
+    width: 804px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #0B1124;
 }
 
+.block_image image {
+    width: 160px;
+    height: 154px;
+}
+
+.products p {
+
+    width: 150px;
+}
+.products {
+
+}
+
+.products .cards {
+    display: flex;
+    justify-content: space-between;
+}

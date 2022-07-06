@@ -22,34 +22,41 @@ function ProductPage() {
                                     <div>
                                         <h1> {elem.price} </h1>
                                         <h5> {elem.specifications} </h5>
-                                        <table className={classes.block_table}>
-                                            <tbody>
-                                            <tr>
-                                                <th> {elem.procces.proName} </th>
-                                                <td> {elem.procces.proDesc} </td>
-                                            </tr>
-                                            <tr>
-                                                <th> {elem.mCamera.mainCam} </th>
-                                                <td> {elem.mCamera.descCam} </td>
-                                            </tr>
-                                            <tr>
-                                                <th> {elem.fCamera.frontCam} </th>
-                                                <td> {elem.fCamera.descCam} </td>
-                                            </tr>
-                                            <tr>
-                                                <th> {elem.hdd.inMemory} </th>
-                                                <td> {elem.hdd.descMemory} </td>
-                                            </tr>
-                                            <tr>
-                                                <th> {elem.ram.ramName} </th>
-                                                <td> {elem.ram.descRam} </td>
-                                            </tr>
-                                            <tr>
-                                                <th> {elem.nfc.nfcName} </th>
-                                                <td> {elem.nfc.descNfc} </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                        <div className={classes.block_table}>
+                                            <div className={classes.block}>
+                                                <div className={classes.between}>
+                                                    <th> {elem.procces.proName} </th>
+                                                    <td> {elem.procces.proDesc} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+                                                <div className={classes.between}>
+                                                    <th> {elem.mCamera.mainCam} </th>
+                                                    <td> {elem.mCamera.descCam} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+                                                <div className={classes.between}>
+                                                    <th> {elem.fCamera.frontCam} </th>
+                                                    <td> {elem.fCamera.descCam} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+                                                <div className={classes.between}>
+                                                    <th> {elem.hdd.inMemory} </th>
+                                                    <td> {elem.hdd.descMemory} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+                                                <div className={classes.between}>
+                                                    <th> {elem.ram.ramName} </th>
+                                                    <td> {elem.ram.descRam} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+
+                                                <div className={classes.between}>
+                                                    <th> {elem.nfc.nfcName} </th>
+                                                    <td> {elem.nfc.descNfc} </td>
+                                                </div>
+                                                <div className={classes.line}></div>
+                                            </div>
+                                        </div>
                                         <button>Добавить в корзину</button>
                                     </div>
                                 </div>

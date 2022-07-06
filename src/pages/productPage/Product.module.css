@@ -34,10 +34,22 @@
 .block_table {
     width: 580px;
 }
-th, td {
-    border-bottom: 1px solid gray;
-    padding: 3px;
+.block {
+    height:250px;
+    line-height: 35px;
 }
+
+.between {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.line {
+    border-bottom: 1px solid #F1F0F3;
+    width: 500px;
+}
+
 th {
     text-align: start;
 }

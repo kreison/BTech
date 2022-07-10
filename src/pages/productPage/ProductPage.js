@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { useSelector } from 'react-redux'
 import classes from "./../productPage/Product.module.css";
-import {Swiper, SwiperSlide} from "swiper/react";
 import ProductSlider from "./slider/ProductSlider";
 import ReviewsComponent from "../../components/reviewsComponent/ReviewsComponent";
 
@@ -58,7 +57,6 @@ function ProductPage() {
                                                     <p className={classes.day}> {elem.ram.descRam} </p>
                                                 </div>
                                                 <div className={classes.line}></div>
-
                                                 <div className={classes.between}>
                                                     <h4> {elem.nfc.nfcName} </h4>
                                                     <p className={classes.day}> {elem.nfc.descNfc} </p>

@@ -41,7 +41,7 @@ const ProductSlider = ({data}) => {
                         ?
                         data.map((todo) =>
 
-                        <SwiperSlide><Preview key={todo.id} todo={ todo } /></SwiperSlide>
+                        <SwiperSlide key={todo.id} ><Preview todo={ todo } /></SwiperSlide>
                         )
                         :
                         null

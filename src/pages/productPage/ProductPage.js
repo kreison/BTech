@@ -3,9 +3,11 @@ import { useSelector } from 'react-redux'
 import classes from "./../productPage/Product.module.css";
 import ProductSlider from "./slider/ProductSlider";
 import ReviewsComponent from "../../components/reviewsComponent/ReviewsComponent";
+import { useParams } from 'react-router-dom';
 
 function ProductPage() {
     const products = useSelector(state => state.products.products);
+    const param = useParams()
 
     const URL = "https://pokeapi.co/api/v2/pokemon/?limit=50";
     const [data, setData] = useState([]);
@@ -18,6 +20,7 @@ function ProductPage() {
 
     return (
         <div className='container'>
+            {param.id}
             {
                 products.map((elem, i) => {
                     return (

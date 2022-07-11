@@ -12,9 +12,6 @@ function HityPage(props) {
             .then(res => res.json())
             .then(data => setData(data.results))
     }, [URL])
-    useEffect(() => {
-        console.log(data)
-    }, [data])
 
     return (
         <div className='container'>
@@ -31,9 +28,7 @@ function HityPage(props) {
                             null
                     }
                 </div>
-
             </div>
-            {/* <Hity data={data} /> */ }
         </div>
 
     );

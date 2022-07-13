@@ -8,7 +8,7 @@ import cl from './preimishestva.module.css'
 const PreimBlock = () => {
     return (
         <div className={cl.pBlock}>
-            <div className='container'>
+            <div className={cl.container}>
                 <h2>Наши преимущества</h2>
 
                 <div className={cl.pBlock_inner}>

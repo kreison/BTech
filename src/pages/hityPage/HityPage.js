@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Hity.module.css'
-// import Hity from '../../components/popular/hity';
 import Preview from '../../components/preview/Preview';
 
 function HityPage(props) {
@@ -12,6 +11,9 @@ function HityPage(props) {
             .then(res => res.json())
             .then(data => setData(data.results))
     }, [URL])
+    useEffect(() => {
+        console.log(data)
+    }, [data])
 
     return (
         <div className='container'>
@@ -28,6 +30,7 @@ function HityPage(props) {
                             null
                     }
                 </div>
+
             </div>
         </div>
 

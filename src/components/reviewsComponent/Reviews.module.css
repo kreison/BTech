@@ -8,27 +8,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-h2 {
-    margin-bottom: 37px;
-}
-
-hr {
-    margin: 30px 0 25px;
-}
-
-.div {
-    margin: 20px 0;
-}
-
-p {
-    line-height: 1.5;
-}
-
-.flex{
-    display: flex;
-}
-
-.flex b {
-    margin: 4px 0 0 7px;
-}

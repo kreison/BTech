@@ -3,7 +3,7 @@ import cl from './skidki.module.css'
 
 const Skidki = () => {
     return (
-        <div className='container'>
+        <div className={cl.container}>
             <div className={cl.skidki}>
                 <div className={cl.ngod}>
                     <h4>Новогодние скидки</h4>

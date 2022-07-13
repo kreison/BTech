@@ -1,5 +1,6 @@
-.popular{
-    margin-bottom: 80px;
+.container {
+    width: 1150px;
+    margin: 0 auto;
 }
 .popular h2{
     left: 50px;
@@ -13,9 +14,4 @@
 .swipe img {
     padding-left: 20px;
 
-}
-.slide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

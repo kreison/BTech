@@ -22,6 +22,7 @@ function Preview({ todo }) {
                 },
                 body: JSON.stringify(todo)
             });
+            
         } 
     }
     return (

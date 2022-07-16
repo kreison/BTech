@@ -6,7 +6,6 @@ import Hity from "../../components/popular/Hity";
 import SpecBlock from "../../components/specBlock/SpecBlock";
 import PreimBlock from "../../components/preimushestva/PreimBlock";
 import Partnery from "../../components/partnery/Partnery";
-import RegistrationPage from '../registrationPage/RegistrationPage';
 import SwiperMainPage from '../../components/SliderMainPage/SliderMainPage'
 
 
@@ -24,7 +23,6 @@ const MainPage = () => {
             <SpecBlock />
             <PreimBlock />
             <Partnery />
-            {/*<RegistrationPage />*/ }
 
         </div>
     );

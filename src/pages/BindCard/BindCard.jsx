@@ -1,9 +1,8 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import cl from './BindCard.module.css'
 import visa from '../../picture/oplata/visa.svg'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const BindCard = () => {
     const [input, setInput] = useState({

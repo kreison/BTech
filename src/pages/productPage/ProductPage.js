@@ -25,6 +25,7 @@ function ProductPage() {
     }, [URL])
     return (
         <div className={classes.product}>
+            {param.id}
             {
                 products.map((elem, i) => {
                     return (

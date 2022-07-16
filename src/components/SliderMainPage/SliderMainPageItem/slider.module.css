@@ -9,6 +9,17 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 625px) {
+    .left h1, .left h3{
+        display: none;
+    }
+    .inner{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    
+}
 .right{
     background: url('../../../picture/circles.svg') center no-repeat;
     width: 455px;

@@ -7,7 +7,11 @@
     justify-content: space-between;
     margin-bottom: 86px;
 }
-
+@media (max-width: 400px) {
+    .preview{
+        width: 150px;
+    }
+}
 .link {
     width: 100%;
     display: flex;
@@ -20,7 +24,7 @@
     height: 154px;
 }
 .name{
-    width: 195px;
+    max-width: 195px;
     margin: 14px 0px 14px;
 }
 .desc {

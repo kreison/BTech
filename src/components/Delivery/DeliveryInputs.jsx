@@ -1,8 +1,6 @@
 import React from 'react';
 import cl from './DeliveryInputs.module.css'
 
-import { Link } from 'react-router-dom';
-
 
 
 const SignInputs = () => {

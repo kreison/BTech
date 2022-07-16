@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import cl from './BindCard.module.css'
 import visa from '../../picture/oplata/visa.svg'
-import { Link } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const BindCard = () => {
     const [input, setInput] = useState({
@@ -15,6 +15,7 @@ const BindCard = () => {
         six: '',
         seven: ''
     });
+    const nav = useNavigate()
 
 
     const changeInput = (e) => {
@@ -22,7 +23,12 @@ const BindCard = () => {
             setInput({ ...input, [e.target.name]: e.target.value })
         }
     }
+    
+    const click = ()=>{
+        localStorage.setItem('binded', true);
+        nav('/delivery')
 
+    }
 
     return (
         <div className='container'>
@@ -51,7 +57,8 @@ const BindCard = () => {
                 </form>
                 
             </div>
-            <p onClick={localStorage.setItem('binded', true)} style={{display: 'inline'}} className='button'>Привязать</p>
+            <p onClick={click} style={{display: 'inline'}} className='button'>Привязать</p>
+            
         </div>
     );
 };

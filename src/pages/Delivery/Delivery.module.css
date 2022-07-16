@@ -48,3 +48,11 @@ input {
     border: 0;
     margin-bottom: 20px;
 }
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}

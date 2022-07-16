@@ -136,7 +136,7 @@
 	height: 20px;
 }
 .iconOneCards {
-	background: url('/src/page/img/Icon.png');
+	background: url('../../picture/img/Icon.png');
 	list-style: none;
 	width: 21px;
 	height: 20px;
@@ -151,14 +151,14 @@
 @media (max-width: 414px) {
 	.iconOneCards {
 		margin-top: -34px;
-		background: url('/src/page/img/star.png') no-repeat;
+		background: url('../../picture/img/star.png') no-repeat;
 		width: 11px;
 		height: 60px;
 	}
 }
 
 .iconTwoCards {
-	background: url('/src/page/img/iconB.png');
+	background: url('../../picture/img/iconB.png');
 	width: 16px;
 	height: 21px;
 }
@@ -166,7 +166,7 @@
 @media (max-width: 414px) {
 	.iconTwoCards {
 		margin-top: 15px;
-		background: url('/src/page/img/trash.png') no-repeat;
+		background: url('../../picture/img/trash.png') no-repeat;
 		width: 15px;
 
 		height: 20px;

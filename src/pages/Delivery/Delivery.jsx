@@ -8,8 +8,33 @@ import mc from '../../picture/oplata/mastercard.svg'
 import es from '../../picture/oplata/elsom.svg'
 import bk from '../../picture/oplata/balancekg.svg'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Modal } from '@mui/material';
+import SuccesBind from '../../components/modals/SuccesBind/SuccesBind';
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
 
 const SignIn = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const [binded, setBinded] = useState()
+    useEffect(() => {
+        setBinded(localStorage.getItem('binded'))
+        console.log(localStorage.getItem('binded'));
+    }, [])
     return (
         <div className='container'>
             <div className={ cl.inner }>
@@ -45,8 +70,24 @@ const SignIn = () => {
                     <h4>Balance KG</h4>
                 </div>
             </div>
-            <Link to="/" className="button">Оплатить</Link>
 
+            {
+                binded === 'true'
+                    ?
+                    <p onClick={ handleOpen } style={ { display: 'inline' } } className="button">Оплатить</p>
+                    :
+                    <Link to="/bind" className="button">Оплатить</Link>
+            }
+            <Modal
+                open={ open }
+                onClose={ handleClose }
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <div className={cl.modal}>
+                    <SuccesBind close={handleClose} />
+                </div>
+            </Modal>
         </div>
     );
 };

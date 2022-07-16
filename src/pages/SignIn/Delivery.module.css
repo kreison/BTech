@@ -1,0 +1,50 @@
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+.formThird {
+    max-width: 830px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.oplata {
+    width: 150px;
+    height: 160px;
+    padding: 45px;
+    background: #F7F7FC;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.oplata.active {
+    border: 2px solid #62A9FC;
+}
+
+.oplata img {
+    width: 60px;
+    object-fit: cover;
+}
+
+.oplata h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+input {
+    padding: 10px 12px;
+    background: #F7F7FC;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 20px;
+}

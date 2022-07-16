@@ -1,0 +1,10 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+.hitsInner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

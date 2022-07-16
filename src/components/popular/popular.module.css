@@ -1,0 +1,22 @@
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+.popular h2{
+    left: 50px;
+    display: flex;
+}
+.swipe p {
+    display: flex;
+    justify-content: space-around;
+    right: 10px;
+}
+.swipe img {
+    padding-left: 20px;
+
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 

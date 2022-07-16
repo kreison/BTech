@@ -1,0 +1,43 @@
+.slide {
+    width: 100%;
+    height: 100%;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.right{
+    background: url('../../../picture/circles.svg') center no-repeat;
+    width: 455px;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 775px) {
+    .right{
+        width: 345px;
+        height: 295px;
+    }
+}
+.right img{
+    object-fit: contain;
+    width: 70%;
+}
+.h1 {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 135%;
+}
+
+.h3 {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+}

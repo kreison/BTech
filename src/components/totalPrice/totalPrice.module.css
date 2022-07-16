@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box !important;
+}
+.result_price_div {
+    padding: 18px 30px 18px 22px;
+    background-color: #F7F7FC;
+    width: 100%;
+    border-radius: 0 0 28px 28px;
+    border-top: 1px solid #D2D1D7;
+    box-sizing: border-box;
+}
+.result_price_h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+}
+.result_price {
+    color: #2E3C85;
+    margin: 0;
+    margin-left: 16px;
+    line-height: 28px;
+}

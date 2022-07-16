@@ -1,0 +1,31 @@
+
+body {
+    font-family: "Rubik";
+    box-sizing: border-box !important;
+}
+.backet {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7FC;
+    border-radius: 28px 28px 0 0;
+    max-width: 600px;
+    padding: 14px 36px 30px 36px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.backet__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+}
+.backet_pd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: scroll;
+    height: 350px;
+    /* padding-left: 98px; */
+}
+
+

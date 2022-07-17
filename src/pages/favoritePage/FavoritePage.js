@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import ProductFavourite from '../../components/FavoritePage/ProductFavourite'
+import ProductFavourite from '../FavoritePage/ProductFavourite'
 import { addBascket, removeCards } from '../../redux/actions/actions'
 
 const FavoritePage = () => {

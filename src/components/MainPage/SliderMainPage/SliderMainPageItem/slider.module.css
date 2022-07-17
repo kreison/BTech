@@ -21,7 +21,7 @@
     
 }
 .right{
-    background: url('../../../picture/circles.svg') center no-repeat;
+    background: url('../../../../picture/circles.svg') center no-repeat;
     width: 455px;
     height: 400px;
     background-size: cover;

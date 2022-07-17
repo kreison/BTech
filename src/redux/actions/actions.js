@@ -82,3 +82,29 @@ export const getHitsAction = (limit = 10) => {
 		dispatch({ type: types.HITS_PRODUCT, payload: sorted })
 	}
 }
+
+
+const URL = "https://jsonplaceholder.typicode.com/users"
+
+
+export const userAction =(user)=> {
+    return{
+        type: "USER",
+        payload: user
+    }
+}
+
+export const createUserAction = (data) => {
+    return async function({dispatch}){
+        const options = {
+            method: "POST",
+            header: {
+                "Content-Type" : "Application/json"
+            },
+            body: JSON.stringify(data)
+        }
+        const response = await fetch(URL,options)
+        console.log(data.email)
+		// dispatch(userAction(data.email))
+    }
+}

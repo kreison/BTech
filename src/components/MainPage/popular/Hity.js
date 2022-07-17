@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getHitsAction } from '../../redux/actions/actions'
-import Preview from '../preview/Preview';
+import { getHitsAction } from '../../../redux/actions/actions'
+import Preview from '../../preview/Preview';
 import classes from './Hity.module.css'
 
 const Hity = () => {

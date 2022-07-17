@@ -1,10 +1,10 @@
 import React, { useEffect } from "react"
 import classes from './backet.module.css'
 import { useDispatch, useSelector } from "react-redux/es/exports"
-import { deleteProductAction, getProductAction, increaseCountAction, getTotalSummAction } from "../../redux/actions/actions"
-import { data } from "../../data"
-import Product from "../product/Product"
-import TotalPrice from "../totalPrice/TotalPrice"
+import { deleteProductAction, getProductAction, increaseCountAction, getTotalSummAction } from "../../../redux/actions/actions"
+import { data } from "../../../data"
+import Product from "../../product/Product"
+import TotalPrice from "../../basket/totalPrice/TotalPrice"
 
 
 function Backet() {

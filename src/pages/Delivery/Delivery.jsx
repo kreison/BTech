@@ -1,5 +1,5 @@
 import React from 'react';
-import Backet from '../../components/backet/Backet';
+import Backet from '../../components/basket/backet/Backet';
 import DeliveryInputs from '../../components/Delivery/DeliveryInputs';
 import cl from './Delivery.module.css'
 import nal from '../../picture/oplata/coins.svg'

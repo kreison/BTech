@@ -26,6 +26,6 @@
     text-decoration: none;
 }
 .link::after{
-    content: url('../../picture/arrow.svg');
+    content: url('../../../picture/arrow.svg');
     margin-left: 10px;
 }

@@ -6,12 +6,18 @@ import React, { useEffect } from "react";
 import SignIn from './pages/Delivery/Delivery';
 import FavoritePage from './pages/favoritePage/FavoritePage';
 import BindCard from './pages/BindCard/BindCard';
+import LoginPage from './pages/loginPage/LoginPage';
+import PinLoginPage from './pages/loginPage/PinLoginPages';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const email = useSelector(state => state.userReducer);
   useEffect(() => {
+    console.log(localStorage.getItem('user'));
     if (localStorage.getItem('binded') === null) {
       localStorage.setItem('binded', false);
     }
+
   }, [])
   return (
     <div className="App">
@@ -21,6 +27,14 @@ function App() {
         <Route path='/hits' element={ <HityPage /> } />
         <Route path='/delivery' element={ <SignIn /> } />
         <Route path='/fav' element={ <FavoritePage /> } />
+        <Route path='/sign' element={ <LoginPage /> } />
+        {
+          localStorage.getItem('user') === ''
+            ?
+            null
+            :
+            <Route path={ `/sign/message/:email` } element={ <PinLoginPage /> } /> 
+        }
         {
           localStorage.getItem('binded') === 'false'
             ?

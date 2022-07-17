@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import slide1 from '../../picture/pic1.png'
-import slide2 from '../../picture/pic2.png'
-import slide3 from '../../picture/pic3.png'
+import slide1 from '../../../picture/pic1.png'
+import slide2 from '../../../picture/pic2.png'
+import slide3 from '../../../picture/pic3.png'
 import cl from './SpecBlock.module.css'
 
 

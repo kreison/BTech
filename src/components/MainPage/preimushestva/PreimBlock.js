@@ -1,8 +1,8 @@
 import React from 'react';
-import pic1 from '../../picture/garant.png'
-import pic2 from '../../picture/dostavka.png'
-import pic3 from '../../picture/rassrochka.png'
-import pic4 from '../../picture/online.png'
+import pic1 from '../../../picture/garant.png'
+import pic2 from '../../../picture/dostavka.png'
+import pic3 from '../../../picture/rassrochka.png'
+import pic4 from '../../../picture/online.png'
 import cl from './preimishestva.module.css'
 
 const PreimBlock = () => {

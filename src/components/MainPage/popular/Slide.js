@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import slide1 from '../../picture/smartfony.png'
-import slide2 from '../../picture/naushniki.png'
-import slide3 from '../../picture/notniki.png'
-import slide4 from '../../picture/tv.png'
-import slide5 from '../../picture/smart chasy.png'
-import slide6 from '../../picture/stiralka.png'
-import slide7 from '../../picture/holodilnik.png'
-import slide8 from '../../picture/smartfony.png'
+import slide1 from '../../../picture/smartfony.png'
+import slide2 from '../../../picture/naushniki.png'
+import slide3 from '../../../picture/notniki.png'
+import slide4 from '../../../picture/tv.png'
+import slide5 from '../../../picture/smart chasy.png'
+import slide6 from '../../../picture/stiralka.png'
+import slide7 from '../../../picture/holodilnik.png'
+import slide8 from '../../../picture/smartfony.png'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';

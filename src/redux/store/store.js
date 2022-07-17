@@ -4,6 +4,7 @@ import { calcReducer } from "../reducers/calcReducer"
 import { createProductReducer } from "../reducers/createProductReducer";
 import { hitsProductReducer } from "../reducers/hitsReducers";
 import {favoriteReducer} from '../favoriteReducer'
+const {userReducer} = require("../reducers/loginReducer");
 
 
 export const rootReducer = combineReducers({
@@ -12,4 +13,5 @@ export const rootReducer = combineReducers({
     products: createProductReducer,
     hitsProduct: hitsProductReducer,
     favoriteReducer,
+    userReducer
 })

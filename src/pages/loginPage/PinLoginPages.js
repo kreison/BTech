@@ -13,7 +13,7 @@ const PinLoginPage = () => {
             <div className={classes.login_box}>
                 <div className={classes.container}>
                     <h1>Вход/Регистрация</h1>
-                    <div>
+                    <div  style={{marginBottom: 30}}>
                         <h3 className={classes.fontPin}>Код подтверждения отправлен на номер <br/>
 
                         </h3>
@@ -34,7 +34,7 @@ const PinLoginPage = () => {
 
                         <a href="">Получить новый код</a>
                     </div>
-                    <button>Подтвердить</button>
+                    <button className='button'>Подтвердить</button>
                 </div>
             </div>
         </div>

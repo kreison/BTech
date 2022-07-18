@@ -12,11 +12,13 @@ function ReviewsComponent() {
                 <h4>Хорошее качество по выгодной цене!</h4>
                 <img src="./img/Baktybekova.svg" alt="" />
             </div>
+
             <img src="./img/plus.svg" alt="" /> <b>Плюсы </b>
             <p>
                 Очень сбалансированный телефон.
                 Хорошая камера и батарея, качественная сборка и яркий экран.
             </p>
+            
             <img src="./img/minus.svg" alt="" /> <b>Минусы </b>
             <p>За время использования не нашла существенных минусов.</p>
             <img src="./img/review.svg" alt="" /> <b>Отзывы </b>

@@ -6,16 +6,16 @@ const Skidki = () => {
         <div className='container'>
             <div className={cl.skidki}>
                 <div className={cl.ngod}>
-                    <h4>Новогодние скидки</h4>
+                    <p>Новогодние скидки</p>
                 </div>
                 <div className={cl.ngod}>
-                    <h4>Топ новинки</h4>
+                    <p>Топ новинки</p>
                 </div>
                 <div className={cl.ngod}>
-                    <h4>Товары дня</h4>
+                    <p>Товары дня</p>
                 </div>
                 <div className={cl.ngod}>
-                    <h4>Рекомендуемое Вам</h4>
+                    <p>Рекомендуемое Вам</p>
                 </div>
 
             </div>

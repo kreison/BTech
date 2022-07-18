@@ -7,7 +7,7 @@ const Popular = () => {
 
         <div className={cl.popular}>
 
-            <h2>Популярные категории</h2>
+            <h2 style={{marginBottom: 40}}>Популярные категории</h2>
 
         </div>
         </div>

@@ -93,7 +93,7 @@ function Backet() {
     })
 
     return (
-        <div style={{width: 600}}>
+        <div style={{maxWidth: 600}}>
             <div className={ classes.backet }>
                 <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
                 <h3 className={ classes.backet__title }>Детали заказа</h3>

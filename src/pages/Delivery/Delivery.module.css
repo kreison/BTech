@@ -2,10 +2,17 @@
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 810px) {
+    .inner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .formThird {
     max-width: 830px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }

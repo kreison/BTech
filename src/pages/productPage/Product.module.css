@@ -2,7 +2,19 @@
 * {
     box-sizing: border-box;
 }
-
+@media (max-width: 550px) {
+    .h1{
+        font-size: 23px;
+    }
+    .name{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .name{
+        font-size: 16px;
+    }
+}
 .product {
     display: flex;
     flex-direction: column;
@@ -10,12 +22,16 @@
     margin: 0 auto;
 }
 
-@media (max-width: 1180px) {
-    .product {
-        padding: 40px 0;
+
+
+@media (max-width: 500px) {
+    .item{
+        font-size: 14px;
+    }
+    .itemDesc{
+        font-size: 12px;
     }
 }
-
 .reviews{
     display: flex;
     align-items: center;
@@ -28,12 +44,21 @@
     justify-content: space-evenly;
     width: 1140px;
 }
+@media (max-width: 1140px) {
+    .product {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .block_img_price{
+        width: 100%;
+    }
+}
 .image {
     padding-top: 30px;
 }
 
 .block_table {
-    width: 580px;
+    /* max-width: 580px; */
 }
 .block {
     height:200px;
@@ -53,23 +78,18 @@
 
 .between {
     display: flex;
-    width: 500px;
+    /* max-width: 500px; */
     justify-content: space-between;
 }
 
 .line {
     border-bottom: 1px solid #F1F0F3;
-    width: 500px;
+    /* width: 500px; */
 }
 
-th {
-    text-align: start;
-}
-td {
-    text-align: end;
-}
 
-button {
+
+.button {
     margin-top: 120px;
     width: 235px;
     height: 48px;
@@ -79,9 +99,13 @@ button {
     border: none;
     font-weight: 800;
 }
+.desc{
+    margin-top: 40px;
 
-.desc_product{
-    width: 804px;
+}
+.desc_product p{
+    margin-top: 15px;
+    max-width: 804px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -97,7 +121,7 @@ button {
 
 .products p {
 
-    width: 150px;
+    /* width: 150px; */
 }
 .products {
 

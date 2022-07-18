@@ -40,10 +40,11 @@ const LoginPage = () => {
         <div className={ classes.login }>
             <div className={ classes.login_box }>
                 <div className={ classes.container }>
-                    <h1>Вход/Регистрация</h1>
+                    <h1 className={ classes.h1 }>Вход/Регистрация</h1>
                     <div className={ classes.logging_in }>
-                        <h3>Введите вашу почту</h3>
+                        <h3 className={ classes.h3 }>Введите вашу почту</h3>
                         <input
+                            className={ classes.input }
                             type="email"
                             { ...register('email') }
                             placeholder="Email"
@@ -52,6 +53,7 @@ const LoginPage = () => {
                             onChange={ changeInput }
                         />
                         <input
+                            className={ classes.input }
                             type={ !passwordShow ? 'password' : undefined }
                             { ...register('password') }
                             placeholder="Пaроль"
@@ -61,13 +63,13 @@ const LoginPage = () => {
                             onChange={ changeInput }
                         />
                         <div className={ classes.show_pass } onClick={ changeShow }></div>
-                        <p>Нажимая кнопку «Создать аккаунт», я даю свое согласие на <br /> обработку моих персональных данных, в соответствии с <br /> Государственным законом от 27.07.2006 года №38 «О <br /> персональных данных»</p>
+                        <p className={ classes.p }>Нажимая кнопку «Создать аккаунт», я даю свое согласие на <br /> обработку моих персональных данных, в соответствии с <br /> Государственным законом от 27.07.2006 года №38 «О <br /> персональных данных»</p>
                     </div>
                     {
                         user.email !== '' && user.password !== ''
                             ?
                             <Link
-
+                                className={ 'button' }
                                 to={ '/sign/message/' + user.email }
                                 type='submit'
                                 onClick={ createUser }>
@@ -75,10 +77,10 @@ const LoginPage = () => {
                             </Link>
                             :
                             <Link
-
-                                to={ '/sign'}
+                                className={ 'button' }
+                                to={ '/sign' }
                                 type='submit'
-                                onClick={ ()=> alert('ВПИШИТЕ ЛОГИН И ПАРОЛЬ') }>
+                                onClick={ () => alert('ВПИШИТЕ ЛОГИН И ПАРОЛЬ') }>
                                 Создать аккаунт
                             </Link>
                     }

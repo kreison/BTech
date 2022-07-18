@@ -29,51 +29,51 @@ function ProductPage() {
             {
                 products.map((elem, i) => {
                     return (
-                        <div key={i}>
+                        <div className='container' key={i}>
                             <div>
-                                <h2> {elem.name}</h2>
+                                <h2 className={classes.name}> {elem.name}</h2>
                                 <div className={classes.reviews}> {elem.stars} <b> 151 отзывов </b> </div>
                                 <div className={classes.block_img_price}>
                                     <div className={classes.image}> {elem.image} </div>
                                     <div>
-                                        <h1> {elem.price} </h1>
+                                        <h1 className={classes.h1}> {elem.price} </h1>
                                         <h5> {elem.specifications} </h5>
                                         <div className={classes.block_table}>
                                             <div className={classes.block}>
                                                 <div className={classes.between}>
-                                                    <th> {elem.procces.proName} </th>
-                                                    <td> {elem.procces.proDesc} </td>
+                                                    <div className={classes.item}> {elem.procces.proName} </div>
+                                                    <div className={classes.itemDesc}> {elem.procces.proDesc} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
                                                 <div className={classes.between}>
-                                                    <th> {elem.mCamera.mainCam} </th>
-                                                    <td> {elem.mCamera.descCam} </td>
+                                                    <div className={classes.item}> {elem.mCamera.mainCam} </div>
+                                                    <div className={classes.itemDesc}> {elem.mCamera.descCam} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
                                                 <div className={classes.between}>
-                                                    <th> {elem.fCamera.frontCam} </th>
-                                                    <td> {elem.fCamera.descCam} </td>
+                                                    <div className={classes.item}> {elem.fCamera.frontCam} </div>
+                                                    <div className={classes.itemDesc}> {elem.fCamera.descCam} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
                                                 <div className={classes.between}>
-                                                    <th> {elem.hdd.inMemory} </th>
-                                                    <td> {elem.hdd.descMemory} </td>
+                                                    <div className={classes.item}> {elem.hdd.inMemory} </div>
+                                                    <div className={classes.itemDesc}> {elem.hdd.descMemory} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
                                                 <div className={classes.between}>
-                                                    <th> {elem.ram.ramName} </th>
-                                                    <td> {elem.ram.descRam} </td>
+                                                    <div className={classes.item}> {elem.ram.ramName} </div>
+                                                    <div className={classes.itemDesc}> {elem.ram.descRam} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
 
                                                 <div className={classes.between}>
-                                                    <th> {elem.nfc.nfcName} </th>
-                                                    <td> {elem.nfc.descNfc} </td>
+                                                    <div className={classes.item}> {elem.nfc.nfcName} </div>
+                                                    <div className={classes.itemDesc}> {elem.nfc.descNfc} </div>
                                                 </div>
                                                 <div className={classes.line}></div>
                                             </div>
                                         </div>
-                                        <button>Добавить в корзину</button>
+                                        <button className={classes.button}>Добавить в корзину</button>
                                     </div>
                                 </div>
                                 <div className={classes.desc}>

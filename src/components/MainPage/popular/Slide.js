@@ -19,7 +19,7 @@ SwiperCore.use([Navigation])
 export default () => {
 
     return (
-        <div className={ cl.swipe }>
+        <div style={{marginBottom: 40}} className={ cl.swipe }>
             <Swiper
                 navigation
                 spaceBetween={ 30 }

@@ -25,7 +25,11 @@ body {
     line-height: 22px;
     margin-bottom: 18px;
 }
-
+@media (max-width: 375px) {
+    .fsp{
+        font-size: 14px;
+    }
+}
 .fsp_mopt {
     color: #605D74;
     text-decoration: none;
@@ -71,8 +75,9 @@ body {
 }
 
 .prs_noun {
+    width: 20px;
     background-color: inherit;
-    padding: 3px 16px 4px;
+    /* padding: 3px 16px 4px; */
     padding: 0;
     border: 0;
     max-width: 40px;

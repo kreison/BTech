@@ -22,7 +22,7 @@
 
 }
 
-h1{
+.h1{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
@@ -30,7 +30,7 @@ h1{
     font-weight: 600;
 }
 
-h3{
+.h3{
     font: 16px "Rubik", Arial,sans-serif;
     font-weight: 400;
 }
@@ -43,7 +43,7 @@ h3{
    position: relative;
 }
 
-input{
+.input{
     width: calc(100% - 20px);
     height: 55px;
     margin: 10px 0;
@@ -68,7 +68,7 @@ input{
 
 }
 
-p{
+.p{
     height: 65px;
     font-size: 12px;
     padding: 20px 0 105px;
@@ -76,7 +76,7 @@ p{
 
 }
 
-button{
+.button{
     width: 100%;
     height: 50px;
     background: #F9FC62;
@@ -90,7 +90,7 @@ button{
     cursor: pointer;
 }
 
-a {
+.a {
     display: flex;
     justify-content: center;
     font: 17px 'Rubik', Arial, sans-serif;
@@ -123,4 +123,4 @@ a {
     border: 0;
     text-align: center;
     background: #A4A2AF;
-}
+} 

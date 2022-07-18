@@ -17,6 +17,10 @@ function App() {
     if (localStorage.getItem('binded') === null) {
       localStorage.setItem('binded', false);
     }
+    if (localStorage.getItem('products') === null) {
+      localStorage.setItem('products', JSON.stringify({result: []}));
+    }
+
 
   }, [])
   return (

@@ -21,6 +21,7 @@ const LinksHeader = () => {
             <Link className={ cl.link } to='/fav'><img src={ fav } alt='fav' />Избранное</Link>
 
             <Link className={ cl.link } to='/delivery'><img src={ basket } alt='basket' />Корзина</Link>
+            <Link className={ cl.link } to='/'>На главную</Link>
 
         </>
     );

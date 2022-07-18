@@ -2,10 +2,11 @@ import { types } from '../types'
 
 export const addBascket = cart => {
 	return {
-		type: types.ADD_TO,
+		type: types.ADD_PRODUCT_INTO_BASKET,
 		payload: cart,
 	}
 }
+
 export const removeCards = id => ({
 	type: types.REMOVE_TO,
 	id,

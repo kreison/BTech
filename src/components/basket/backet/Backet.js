@@ -10,17 +10,20 @@ import TotalPrice from "../../basket/totalPrice/TotalPrice"
 function Backet() {
     const dispatch = useDispatch()
 
-    useEffect(()=>{
-        dispatch(getProductAction(data))
-    }, [])
 
     const cart = useSelector(state => state.basket.product)
+    useEffect(() => {
+        dispatch(getProductAction(JSON.parse(localStorage.getItem('products')).result))
+    }, [])
 
     const mass = []
     cart.map((summ) => { mass.push(summ.totalPrice) })
 
     const deleteProduct = (id) => {
         const setCart = () => cart.filter((product) => id !== product.id)
+		localStorage.setItem('products', JSON.stringify({result: setCart()}))
+        console.log(setCart());
+
         dispatch(deleteProductAction(setCart()))
     }
 
@@ -93,7 +96,7 @@ function Backet() {
     })
 
     return (
-        <div style={{maxWidth: 600}}>
+        <div style={ { maxWidth: 600 } }>
             <div className={ classes.backet }>
                 <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
                 <h3 className={ classes.backet__title }>Детали заказа</h3>

@@ -21,14 +21,17 @@ const ProductFavourite = ({
 					<div className={ cl.cards }>
 						{/* <div className='cardsImg'></div> */ }
 
-						<img src={ img } alt={ title } className={ cl.cardsImg } />
-						<div className={ cl.squares }>
-							<div className={ cl.square }></div>
-							<div className={ cl.square }></div>
-							<div className={ cl.square }></div>
-							<div className={ cl.square }></div>
+						<div>
+							<img src={ img } alt={ title } className={ cl.cardsImg } />
+							<div className={ cl.squares }>
+								<div className={ cl.square }></div>
+								<div className={ cl.square }></div>
+								<div className={ cl.square }></div>
+								<div className={ cl.square }></div>
 
+							</div>
 						</div>
+
 						<div className={ cl.descripCards }>
 							<h3>
 								{ title } ({ vershion })
@@ -47,21 +50,21 @@ const ProductFavourite = ({
 								</div>
 
 								<div className={ cl.fonn }>
-									<h5>
+									<h5 className={ cl.h5 }>
 										<span>Процессор</span> { porc }
 									</h5>
-									<h5>
+									<h5 className={ cl.h5 }>
 										<span>Основная камера</span> { Mainphoto }
 									</h5>
-									<h5>
+									<h5 className={ cl.h5 }>
 										<span>Фронтальная камера</span> { secondPhoto }
 									</h5>
-									<h5>
+									<h5 className={ cl.h5 }>
 										<span>Встроенная память</span> { ssd }
-									</h5>
-									<h5>
+									</h5 >
+									<h5 className={ cl.h5 }>
 										<span>Оперативная память</span> { ssd }
-									</h5>
+									</h5 >
 								</div>
 							</div>
 						</div>
@@ -96,8 +99,8 @@ const ProductFavourite = ({
 							</div>
 						</div>
 					</div>
-					<div className={ cl.lineCards }></div>
 				</div>
+				<div className={ cl.lineCards }></div>
 			</div>
 		</div>
 	)

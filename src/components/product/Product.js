@@ -2,14 +2,14 @@ import React from "react";
 import classes from './product1.module.css'
 
 function Product({ product, deleteProduct, increase, decrease, changeValue }) {
-    const { name, totalPrice, id, count } = product;
+    const { title, totalPrice, id, count } = product;
 
     const priceFormatter = new Intl.NumberFormat()
 
     return (
         <div className={ classes.backet_fspdd1 }>
             <div className={ classes.fspdd1_pds }>
-                <h4 className={ classes.fsp }>{ name }</h4>
+                <h4 className={ classes.fsp }>{ title }</h4>
                 <div className={ classes.fspdd1_d }>
                     <p href="" className={ classes.fsp_mopt }>Приобрести позже</p>
                     <p href="" onClick={ () => { deleteProduct(id) } } className={ classes.fsp_mopt }>Удалить</p>

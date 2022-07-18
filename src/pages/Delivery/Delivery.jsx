@@ -22,7 +22,6 @@ const SignIn = () => {
     const [binded, setBinded] = useState()
     useEffect(() => {
         setBinded(localStorage.getItem('binded'))
-        console.log(localStorage.getItem('binded'));
     }, [])
     return (
         <div className='container'>

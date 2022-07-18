@@ -33,7 +33,10 @@ const LoginPage = () => {
 
     const createUser = () => {
         dispatch(createUserAction(user))
+        dispatch(userAction(user))
         localStorage.setItem('user', user.email);
+        localStorage.setItem('isLoggin', false);
+
     }
 
     return (

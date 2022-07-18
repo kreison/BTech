@@ -9,8 +9,16 @@
 	align-items: center;
 }
 
+
+
+.h5{
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+
 .container {
-	width: 1215px;
+	max-width: 1215px;
 	margin: 0 auto;
 }
 
@@ -23,15 +31,21 @@
 
 .h2 {
 	margin-left: -160px;
-	width: 159px;
+	max-width: 159px;
 	height: 38px;
 	font-size: 28px;
 	line-height: 38px;
 	transform: translateX(170px);
 }
 .cards {
-	height: 332px;
+	/* height: 332px; */
 	display: flex;
+	justify-content: center;
+}
+@media (max-width: 620px) {
+	.cards{
+		flex-direction: column;
+	}
 }
 
 .cardsImg {
@@ -49,9 +63,12 @@
 		height: 174px;
 	}
 }
-
+.squares {
+	margin-top: 15px;
+	display: flex;
+}
 .square {
-	transform: translateX(-190px) translateY(250px);
+	/* transform: translateX(-190px) translateY(250px); */
 	margin-right: 8px;
 	width: 40px;
 	height: 40px;
@@ -73,37 +90,28 @@
 
 @media (max-width: 414px) {
 	.fonn {
-		margin-left: 99px;
-		margin-top: -45px;
+		margin-top: 10px;
+		margin-bottom: 20px;
 	}
 }
 
-@media (max-width: 414px) {
-	.descripCards {
-		margin-left: -170px;
-	}
-}
 .descripCards {
-	margin-left: -88px;
+	/* margin-left: -88px; */
 }
 
-@media (min-width: 414px) and (max-width: 768px) {
-	.descripCards {
-		margin-left: -180px;
-	}
-}
+
 
 .descripCards h3 {
 	font-size: 20px;
 	line-height: 18px;
-	width: 415px;
+	max-width: 415px;
 	height: 45px;
 }
 
 @media (max-width: 414px) {
 	.descripCards h3 {
-		margin-left: 100px;
-		font-size: 10px;
+		/* margin-left: 100px; */
+		font-size: 16px;
 	}
 }
 
@@ -117,7 +125,7 @@
 
 @media (max-width: 414px) {
 	.descripCards span {
-		font-size: 7px;
+		/* font-size: 7px; */
 		line-height: 7px;
 		color: #a4a2af;
 		height: 6px;
@@ -125,7 +133,7 @@
 }
 @media (max-width: 414px) {
 	.descripCards h5 {
-		font-size: 7px;
+		font-size: 12px;
 		line-height: 7px;
 		height: 6px;
 	}
@@ -143,10 +151,7 @@
 	display: inline-block;
 }
 
-.squares {
-	margin-top: 15px;
-	display: flex;
-}
+
 
 @media (max-width: 414px) {
 	.iconOneCards {
@@ -232,9 +237,7 @@
 
 @media (max-width: 414px) {
 	.squares {
-		margin-top: -25px;
-		margin-left: 200px;
-		position: absolute;
+		
 		display: flex;
 	}
 }
@@ -297,7 +300,7 @@
 }
 
 .lineCards {
-	width: 1215px;
+	max-width: 1215px;
 	height: 1px;
 	background: rgba(33, 33, 33, 0.08);
 	margin-top: 50px;

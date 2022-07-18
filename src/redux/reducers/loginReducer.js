@@ -9,9 +9,9 @@ const initialState = {
 export const userReducer = (state = initialState, action)=>{
     switch (action.type){
         case "USER" :
-            return {...state, email: action.payload}
-        case "USERS" :
-            return {...state, password: action.payload}
+            console.log(action.payload);
+            return {...state, email: action.payload.email, password: action.payload.password}
+        
         default :
             return state
     }

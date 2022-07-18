@@ -30,7 +30,7 @@ function Preview({ todo }) {
         <div className={ classes.preview }>
             <Link className={ classes.link } to={ `/product/${info.id}` }><img className={ classes.img } src={ info.sprites.other.dream_world.front_default } alt='image not found' /></Link>
             {/* <p className={ classes.name }>{todo.name} </p> */ }
-            <p className={ classes.name }>Смартфон Samsung Galaxy A 52 5G (EU)</p>
+            <p className={ classes.name }>{info.name}Смартфон Samsung Galaxy A 52 5G (EU)</p>
             <div className={ classes.bottom }>
                 <h5 className={ classes.price }>45 000 cом</h5>
                 <div onClick={ addFavourite } className={ classes.addFavourite }></div>

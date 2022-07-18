@@ -15,6 +15,9 @@ export const getProductReducer = (state = initialState, action) => {
             return {...state, product: action.payload}
         case types.GET_TOTALSUMM_ACTION:
             return {...state, totalSumm: action.payload}
+        case types.ADD_PRODUCT_INTO_BASKET:
+            
+            return {...state, product: [...state.product, action.payload]}
         default:
             return state
     }

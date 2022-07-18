@@ -9,11 +9,11 @@ import BindCard from './pages/BindCard/BindCard';
 import LoginPage from './pages/loginPage/LoginPage';
 import PinLoginPage from './pages/loginPage/PinLoginPages';
 import { useSelector } from 'react-redux';
+import Header from './components/Header/Header';
 
 function App() {
   const email = useSelector(state => state.userReducer);
   useEffect(() => {
-    console.log(localStorage.getItem('user'));
     if (localStorage.getItem('binded') === null) {
       localStorage.setItem('binded', false);
     }
@@ -21,7 +21,9 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Header/>
       <Routes>
+        
         <Route index element={ <MainPage /> } />
         <Route path='product/:id' element={ <ProductPage /> } />
         <Route path='/hits' element={ <HityPage /> } />

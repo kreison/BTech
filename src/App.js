@@ -43,13 +43,7 @@ function App() {
             :
             <Route path={ `/sign/message/:email` } element={ <PinLoginPage /> } /> 
         }
-        {
-          localStorage.getItem('binded') === 'false'
-            ?
             <Route path='/bind' element={ <BindCard /> } />
-            :
-            null
-        }
       </Routes>
       <Footer/>
         {/* <SimpleMap /> */}

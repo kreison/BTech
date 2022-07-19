@@ -13,11 +13,11 @@ const Footer = () => {
             <div className={classes.container}>
                 <div className={classes.body}>
                     <div className={classes.footer__inner}>
-                        <h1>BTech</h1>
+                        <h1 className={classes.h1}>BTech</h1>
                         <div className={classes.line}></div>
                         <div className={classes.info}>
                             <div className={classes.customers}>
-                                <h2>Покупателям</h2>
+                                <h2 className={classes.h2}>Покупателям</h2>
                                 <ul>
                                     <li><a href="">Каталог</a></li>
                                     <li><a href="">FAQ</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className={classes.partners}>
-                                <h2>Бизнес-партнерам</h2>
+                                <h2 className={classes.h2}>Бизнес-партнерам</h2>
                                 <ul>
                                     <li><a href="">Условия сотрудничества</a></li>
                                     <li><a href="">Техника для бизнеса</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className={classes.about}>
-                                <h2>О нас</h2>
+                                <h2 className={classes.h2}>О нас</h2>
                                 <ul>
                                     <li><a href="">О BTech</a></li>
                                     <li><a href="">Вакансии</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className={classes.contacts}>
-                                <h2>Обратная связь</h2>
+                                <h2 className={classes.h2}>Обратная связь</h2>
                                 <ul>
                                     <li><a href="">Контакты</a></li>
                                     <li><a href="">WhatsApp</a></li>
@@ -64,7 +64,7 @@ const Footer = () => {
                         </div>
                         <div className={classes.line}></div>
                         <div className={classes.social}>
-                            <h2>Мы в соцсетях</h2>
+                            <h2 className={classes.h2}>Мы в соцсетях</h2>
                             <div className={classes.icons}>
                                 <a href=""><img src={inst} alt=""/></a>
                                 <a href=""><img src={tw} alt=""/></a>

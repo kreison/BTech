@@ -13,8 +13,11 @@ const SliderMainPage = () => {
     useEffect(() => {
         fetch(URL)
             .then(res => res.json())
-            .then(data => setData(data.results))
+            .then(data => {setData(data.results)})
     }, [])
+    useEffect(()=>{
+        console.log(data);
+    }, [data])
     return (
         <div className={ cl.slider }>
             <div className="container">

@@ -6,6 +6,9 @@ import burger from '../../picture/header/burger.svg'
 import { AppBar, Box, Drawer, IconButton, List, Toolbar } from '@mui/material/';
 import LinksHeader from './components/LinksHeader/LinksHeader';
 import SearchHeader from './components/SearchHeader/SearchHeader';
+import useBreadcrumbs from 'use-react-router-breadcrumbs';
+import { Link } from 'react-router-dom';
+import BreadCrumbsItem from './components/BreadCrumbs/BreadCrumbsItem';
 
 
 const drawerWidth = 240;
@@ -13,11 +16,13 @@ const drawerWidth = 240;
 const Header = (props) => {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const bc = useBreadcrumbs()
+    console.log(bc);
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
-        
+
     const drawer = (
         <Box onClick={ handleDrawerToggle } sx={ { position: 'sticky', padding: '15px' } }>
             <img className={ cl.logo } src={ logo } alt="" />
@@ -38,31 +43,39 @@ const Header = (props) => {
                 component="nav"
             >
                 <Toolbar
-                    sx={ { backgroundColor: 'white', position: 'sticky' } }
-                    className={ cl.header }
+                    sx={ { backgroundColor: 'white', position: 'sticky', flexDirection: 'column', alignItems: 'flex-start' } }
+                    
                 >
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={ handleDrawerToggle }
-                        className={ cl.burger }
-                        size='small'
-                        sx={ { display: { sm: 'none' } } }
-                    >
-                        <div className={ cl.burgerContainer }>
-                            <img
-                                className={ cl.logo }
-                                src={ burger }
-                                alt=""
-                            />
-                        </div>
-                    </IconButton>
+                    <Box   className={ cl.header }>
+                        <IconButton
+                            color="inherit"
+                            aria-label="open drawer"
+                            edge="start"
+                            onClick={ handleDrawerToggle }
+                            className={ cl.burger }
+                            size='small'
+                            sx={ { display: { sm: 'none' } } }
+                        >
+                            <div className={ cl.burgerContainer }>
+                                <img
+                                    className={ cl.logo }
+                                    src={ burger }
+                                    alt=""
+                                />
+                            </div>
+                        </IconButton>
 
-                    <SearchHeader />
+                        <SearchHeader />
 
-                    <Box sx={ { display: { xs: 'none', sm: 'flex' } } }>
-                        <LinksHeader />
+                        <Box sx={ { display: { xs: 'none', sm: 'flex' } } }>
+                            <LinksHeader />
+                        </Box>
+
+                    </Box>
+                    <Box sx={{marginTop: '20px'}}>
+                        {
+                            bc.map(item => <BreadCrumbsItem item={item} key={item.key}/>)
+                        }
                     </Box>
                 </Toolbar>
             </AppBar>
@@ -79,7 +92,7 @@ const Header = (props) => {
                     sx={ {
                         display: { xs: 'block', sm: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                        
+
 
                     } }
                 >

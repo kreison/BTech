@@ -12,6 +12,9 @@ const SliderMainPageItem = ({ info }) => {
             setData(json)
         }
     }, []);
+    useEffect(()=>{
+        console.log(data);
+    }, [data])
     return (
         <>
             <div className={ cl.inner }>

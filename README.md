@@ -7,6 +7,9 @@
 5. react-hook-form
 6. react-input-pin-code
 7. material ui
+8. 2gis-map-react
+9. useBreadcrumbs
+
 ***
 ## Работа с проектом:
 # Таски:

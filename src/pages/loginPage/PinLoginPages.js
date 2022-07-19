@@ -10,7 +10,8 @@ const PinLoginPage = () => {
     const user = useSelector(state => state.userReducer);
     const nav = useNavigate()
 
-    const postUser = async (e) => {
+    const postUser = async () => {
+        console.log(user);
         const res = await fetch('https://jsonplaceholder.typicode.com/users',
             {
                 method: 'POST',
@@ -20,11 +21,11 @@ const PinLoginPage = () => {
                 body: JSON.stringify(user)
             }
         )
-        if (!res.ok){
-            console.log(e);
-        }
+        // if (!res.ok){
+        //     console.log(e);
+        // }
         localStorage.setItem('isLoggin', true)
-        nav('/')
+        nav('/');
     }
     
     return (

@@ -7,7 +7,6 @@ import { AppBar, Box, Drawer, IconButton, List, Toolbar } from '@mui/material/';
 import LinksHeader from './components/LinksHeader/LinksHeader';
 import SearchHeader from './components/SearchHeader/SearchHeader';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
-import { Link } from 'react-router-dom';
 import BreadCrumbsItem from './components/BreadCrumbs/BreadCrumbsItem';
 
 
@@ -43,7 +42,7 @@ const Header = (props) => {
                 component="nav"
             >
                 <Toolbar
-                    sx={ { backgroundColor: 'white', position: 'sticky', flexDirection: 'column', alignItems: 'flex-start' } }
+                    sx={ { backgroundColor: 'white', position: 'sticky', flexDirection: 'column', alignItems: 'flex-start', padding: '25px 0 25px' } }
                     
                 >
                     <Box   className={ cl.header }>

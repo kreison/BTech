@@ -45,7 +45,7 @@ function App() {
         }
             <Route path='/bind' element={ <BindCard /> } />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
         {/* <SimpleMap /> */}
 
     </div>

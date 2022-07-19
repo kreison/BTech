@@ -22,13 +22,19 @@ const SignIn = () => {
     const [binded, setBinded] = useState()
     useEffect(() => {
         setBinded(localStorage.getItem('binded'))
+        console.log(JSON.parse(localStorage.getItem('products')).result);
     }, [])
     return (
         <div className='container'>
             <div className={ cl.inner }>
                 <DeliveryInputs />
-
-                <Backet />
+                {
+                    JSON.parse(localStorage.getItem('products')).result.length !== 0
+                        ?
+                        <Backet />
+                        :
+                        <h3>Корзина пуста</h3>
+                }
             </div>
             <h3>Способ оплаты</h3>
             <div className={ cl.formThird }>
@@ -72,8 +78,8 @@ const SignIn = () => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <div className={cl.modal}>
-                    <SuccesBind close={handleClose} />
+                <div className={ cl.modal }>
+                    <SuccesBind close={ handleClose } />
                 </div>
             </Modal>
         </div>

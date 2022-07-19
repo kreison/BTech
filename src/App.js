@@ -10,6 +10,8 @@ import LoginPage from './pages/loginPage/LoginPage';
 import PinLoginPage from './pages/loginPage/PinLoginPages';
 import { useSelector } from 'react-redux';
 import Header from './components/Header/Header';
+import SimpleMap from './components/FooterMap/FooterMap';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const email = useSelector(state => state.userReducer);
@@ -49,7 +51,8 @@ function App() {
             null
         }
       </Routes>
-
+      <Footer/>
+        {/* <SimpleMap /> */}
 
     </div>
   );

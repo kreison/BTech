@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const FavoritePage = () => {
 	const dispatch = useDispatch()
 	const products = useSelector(state => state.favoriteReducer.products)
-	fetch('url?'+JSON.parse())
+	
 	const [productsFav, setProductsFav] = useState({result: JSON.parse(localStorage.getItem('products')).result})
 
 	const handleAddFunc = ( cart) => {

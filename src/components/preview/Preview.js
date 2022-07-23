@@ -1,8 +1,6 @@
 import { Alert, Box, Modal, Skeleton } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { forSomethingTrashPreviewAction } from '../../redux/reducers/forSomethingTrash';
 import classes from './Preview.module.css'
 
 function Preview({ todo }) {
@@ -20,7 +18,6 @@ function Preview({ todo }) {
     const handleClose = () => setOpen(false);
 
     useEffect(() => {
-        // dist(forSomethingTrashPreviewAction(todo.url));
         fetch(todo.url)
         .then(res => res.json())
         .then(
@@ -28,11 +25,6 @@ function Preview({ todo }) {
             setInfo(json)
         )
     }, []);
-
-    // useEffect(()=>{
-    //     console.log(selector);
-    //     setInfo(selector)
-    // }, [selector])
 
     const addFavourite = async (e) => {
         e.target.classList.toggle(classes.active);

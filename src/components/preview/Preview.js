@@ -8,8 +8,6 @@ import classes from './Preview.module.css'
 function Preview({ todo }) {
     const dist = useDispatch();
     const selector = useSelector(state=> state.trash.preview)
-
-
     const [info, setInfo] = useState({ sprites: { other: { dream_world: { front_default: '' } } } });
     const [click, setClick] = useState(false);
 

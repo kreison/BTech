@@ -8,6 +8,7 @@ const SliderMainPageItem = ({ info }) => {
     const [data, setData] = useState({ sprites: { other: { dream_world: { front_default: '' } } } })
     useEffect(() => {
         return async () => {
+            console.log(info);
             const response = await fetch(info);
             const json = await response.json();
             setData(json)

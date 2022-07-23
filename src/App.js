@@ -48,7 +48,7 @@ function App() {
         </Routes>
 
       </React.StrictMode>
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <SimpleMap /> */ }
 

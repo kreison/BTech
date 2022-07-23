@@ -34,7 +34,7 @@ const LoginPage = () => {
     const createUser = () => {
         dispatch(createUserAction(user))
         dispatch(userAction(user))
-        localStorage.setItem('user', user.email);
+        localStorage.setItem('user', JSON.stringify(user));
         localStorage.setItem('isLoggin', false);
 
     }

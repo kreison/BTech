@@ -3,6 +3,7 @@ import { SwiperSlide, Swiper } from 'swiper/react';
 import SliderMainPageItem from './SliderMainPageItem/SliderMainPageItem';
 import cl from './slider.module.css'
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import { CircularProgress } from '@mui/material';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -15,9 +16,7 @@ const SliderMainPage = () => {
             .then(res => res.json())
             .then(data => {setData(data.results)})
     }, [])
-    useEffect(()=>{
-        console.log(data);
-    }, [data])
+    
     return (
         <div className={ cl.slider }>
             <div className="container">
@@ -33,7 +32,12 @@ const SliderMainPage = () => {
                         delay: 3000,
                     }}
                 >
+
                     {
+                        data.length === 0
+                        ?
+                        <CircularProgress/>
+                        :
                         data.map(item => <SwiperSlide  key={ item.name }><SliderMainPageItem className={cl.slide} info={ item.url } /></SwiperSlide>)
                     }
 

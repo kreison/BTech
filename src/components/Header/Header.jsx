@@ -16,7 +16,6 @@ const Header = (props) => {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const bc = useBreadcrumbs()
-    console.log(bc);
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);

@@ -1,3 +1,4 @@
+import { CircularProgress } from '@mui/material';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -24,7 +25,7 @@ const Hity = () => {
                             ?
                             pokemon.map((todo) => <Preview key={ todo.name } todo={ todo } />)
                             :
-                            'loading'
+                            <CircularProgress/>
                     }
                 </div>
                 <Link className={ classes.link } to='/hits'>Все товары</Link>

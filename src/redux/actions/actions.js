@@ -66,7 +66,6 @@ export const getHitsAction = (limit = 10) => {
 		const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}`)
 		const json = await response.json();
 		const pokemons = json.results
-		console.log('bruh')
 		// console.log(pokemons);
 		const sortPok = []
 		for (let i = 0; i < limit; i++) {
@@ -79,7 +78,6 @@ export const getHitsAction = (limit = 10) => {
 		for (let i = 0; i < sorted.length; i++) {
 			delete sorted[i].info;
 		}
-		console.log(sorted)
 		dispatch({ type: types.HITS_PRODUCT, payload: sorted })
 	}
 }

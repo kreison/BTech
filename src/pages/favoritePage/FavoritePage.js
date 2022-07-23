@@ -7,21 +7,29 @@ import { useEffect } from 'react'
 const FavoritePage = () => {
 	const dispatch = useDispatch()
 	const products = useSelector(state => state.favoriteReducer.products)
+	fetch('url?'+JSON.parse())
 	const [productsFav, setProductsFav] = useState({result: JSON.parse(localStorage.getItem('products')).result})
 
 	const handleAddFunc = ( cart) => {
-		console.log(productsFav);
+		console.log(cart, productsFav);
 		if (productsFav.result.length !== 0) {
+			
 			if (productsFav.result[productsFav.result.length - 1].id !== cart.id) {
 				setProductsFav({...productsFav, result: [...productsFav.result, cart]})
 				dispatch(addBascket(cart));
+
 			}
 		} else {
 			setProductsFav({...productsFav, result: [...productsFav.result, cart]})
 			dispatch(addBascket(cart));
 		}
 	}
+	useEffect(()=>{
+		console.log(JSON.parse(localStorage.getItem('products')).result);
+		console.log(productsFav);
+	}, [])
 	useEffect(() => {
+
 		localStorage.setItem('products', JSON.stringify(productsFav))
 	}, [productsFav])
 	const handleRemoveFunc = id => {

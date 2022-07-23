@@ -20,35 +20,39 @@ function App() {
       localStorage.setItem('binded', false);
     }
     if (localStorage.getItem('products') === null) {
-      localStorage.setItem('products', JSON.stringify({result: []}));
+      localStorage.setItem('products', JSON.stringify({ result: [] }));
     }
 
 
   }, [])
   return (
-    <div className="App">
-      <Header/>
-      <Routes>
-        
-        <Route index element={ <MainPage /> } />
-        <Route path='product/:id' element={ <ProductPage /> } />
-        <Route path='/hits' element={ <HityPage /> } />
-        <Route path='/delivery' element={ <SignIn /> } />
-        <Route path='/fav' element={ <FavoritePage /> } />
-        <Route path='/sign' element={ <LoginPage /> } />
-        {
-          localStorage.getItem('user') === ''
-            ?
-            null
-            :
-            <Route path={ `/sign/message/:email` } element={ <PinLoginPage /> } /> 
-        }
-            <Route path='/bind' element={ <BindCard /> } />
-      </Routes>
-      {/* <Footer/> */}
-        {/* <SimpleMap /> */}
+    <>
+      <React.StrictMode>
+        <Header />
+        <Routes>
 
-    </div>
+          <Route index element={ <MainPage /> } />
+          <Route path='product/:id' element={ <ProductPage /> } />
+          <Route path='/hits' element={ <HityPage /> } />
+          <Route path='/delivery' element={ <SignIn /> } />
+          <Route path='/fav' element={ <FavoritePage /> } />
+          <Route path='/sign' element={ <LoginPage /> } />
+          {
+            localStorage.getItem('user') === ''
+              ?
+              null
+              :
+              <Route path={ `/sign/message/:email` } element={ <PinLoginPage /> } />
+          }
+          <Route path='/bind' element={ <BindCard /> } />
+        </Routes>
+
+      </React.StrictMode>
+      <Footer />
+
+      {/* <SimpleMap /> */ }
+
+    </>
   );
 }
 

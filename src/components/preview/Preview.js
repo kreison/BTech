@@ -6,8 +6,8 @@ import { forSomethingTrashPreviewAction } from '../../redux/reducers/forSomethin
 import classes from './Preview.module.css'
 
 function Preview({ todo }) {
-    const dist = useDispatch();
-    const selector = useSelector(state=> state.trash.preview)
+    // const dist = useDispatch();
+    // const selector = useSelector(state=> state.trash.preview)
     const [info, setInfo] = useState({ sprites: { other: { dream_world: { front_default: '' } } } });
     const [click, setClick] = useState(false);
 
@@ -20,13 +20,19 @@ function Preview({ todo }) {
     const handleClose = () => setOpen(false);
 
     useEffect(() => {
-        dist(forSomethingTrashPreviewAction(todo.url));
+        // dist(forSomethingTrashPreviewAction(todo.url));
+        fetch(todo.url)
+        .then(res => res.json())
+        .then(
+            json =>
+            setInfo(json)
+        )
     }, []);
 
-    useEffect(()=>{
-        console.log(selector);
-        setInfo(selector)
-    }, [selector])
+    // useEffect(()=>{
+    //     console.log(selector);
+    //     setInfo(selector)
+    // }, [selector])
 
     const addFavourite = async (e) => {
         e.target.classList.toggle(classes.active);

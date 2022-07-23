@@ -55,7 +55,7 @@ const PinLoginPage = () => {
                                 length={ 5 }
                             />
                         </div>
-                        <a href="">Получить новый код</a>
+                        <a href="#">Получить новый код</a>
                     </div>
                     <button onClick={ postUser } className='button'>Подтвердить</button>
                 </div>
